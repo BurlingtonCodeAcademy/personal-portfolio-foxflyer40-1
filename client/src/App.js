@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useEffect, useClass } from 'react';
 import './App.css';
+import About from './components/About.js'
+import Projects from './components/Projects.js'
+import Interests from './components/Interests.js'
+import Career from './components/Career.js'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Hello portfolio!</h1>
-    </div>
-  );
+    return (
+        <div id="container">
+
+            <Header />
+            <About />
+            <Projects />
+            <Interests />
+            <Career />
+            <Footer />
+
+            
+        </div>
+    );
 }
 
 export default App;
