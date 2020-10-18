@@ -1,16 +1,19 @@
-import React, { useEffect, useClass } from 'react'
+import React from 'react'
 import './Footer.css'
-import PropTypes from 'prop-types'
+
 
 function Footer(props) {
     return (
         <div id='footerContainer'>
+            <div id='footerBox'>
 
+                <div className='pageLink' >LinkedIn</div>
+                <div className='pageLink' >GitHub</div>
+                <div className='pageLink' >Contact Me{
 
-            Footer
-
-
-            
+                }
+                </div>
+            </div>
         </div>
     )
 }

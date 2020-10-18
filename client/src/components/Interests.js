@@ -1,17 +1,15 @@
-import React, { useEffect, useClass } from 'react'
+import React from 'react'
 import './Interests.css'
-import PropTypes from 'prop-types'
+
 
 function Interests(props) {
     return (
-        <div>
-            Interests
+        <div id='interestsContainer' style={{ display: props.seeInterests }}>
+            <div id='interestsBox'>
+                Interests
+            </div>
         </div>
     )
-}
-
-Interests.propTypes = {
-
 }
 
 export default Interests

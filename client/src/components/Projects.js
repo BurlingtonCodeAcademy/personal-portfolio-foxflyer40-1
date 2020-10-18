@@ -1,18 +1,17 @@
-import React, { useEffect, useClass } from 'react'
+import React from 'react'
 import './Projects.css'
-import PropTypes from 'prop-types'
+
 
 function Projects(props) {
     return (
-        <div>
-            Projects
+        <div id='projectsContainer' style={{ display: props.seeProjects }}>
+            <div id='projectsBox'>
+                Projects
+            </div>
         </div>
     )
 }
 
-Projects.propTypes = {
-
-}
 
 export default Projects
 

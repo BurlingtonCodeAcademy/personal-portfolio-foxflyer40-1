@@ -1,17 +1,15 @@
-import React, { useEffect, useClass } from 'react'
+import React from 'react'
 import './Career.css'
-import PropTypes from 'prop-types'
+
 
 function Career(props) {
     return (
-        <div>
-            Career
+        <div id='careerContainer' style={{ display: props.seeCareer }}>
+            <div id='careerBox'>
+                Career
+            </div>
         </div>
     )
-}
-
-Career.propTypes = {
-
 }
 
 export default Career
