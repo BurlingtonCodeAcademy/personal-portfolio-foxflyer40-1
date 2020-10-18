@@ -1,0 +1,41 @@
+#aboutBox {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: cornsilk;
+}
+
+#aboutContent {
+    padding: 0rem 1rem 5rem 2rem;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Landscape orientation on cell device */
+
+@media screen and (min-width: 560px) and (max-width: 849px) {
+    #aboutContent {
+        padding: 0rem 2rem 5rem 3rem;
+    }
+}
+
+/* Full Screen on laptop or tablet */
+
+@media (min-width: 850px) {
+    #aboutContent {
+        padding: 0rem 4rem 5rem 5rem;
+    }
+}
+
+/* iPad only */
+
+@media screen and (width: 768px) and (height: 1024px) {}

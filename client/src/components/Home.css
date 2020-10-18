@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     background-color: cornsilk;
+    position: fixed;
 }
 
 #homeText {
@@ -26,9 +27,12 @@ img {
 
 p {
     margin: 1rem 0rem 0rem 0rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
+
+
+/* Landscape orientation on cell device */
 @media screen and (min-width: 560px) and (max-width: 849px) {
     #homeBox {
         margin: 0;
@@ -37,6 +41,7 @@ p {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        position: relative;
     }
     #homePic {
         width: 35%;
@@ -51,10 +56,44 @@ p {
         margin: 0rem 1rem;
     }
     p {
-        height: 10%;
+        margin: 1rem 0rem 0rem 0rem;
+        font-size: 1.2rem;
     }
+
 }
 
+/* Full Screen on laptop or tablet */
+@media screen and (min-width: 850px) {
+    #homeBox {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    #homePic {
+        width: 35%;
+        margin: 0rem .5rem;
+    }
+    #homeText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 50%;
+        margin: 9rem .5rem;
+    }
+
+    p {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+  
+}
+
+/* iPad only */
 @media screen and (width: 768px) and (height: 1024px) {
     #homeBox {
         margin: 0;
@@ -80,33 +119,8 @@ p {
         margin: 0rem;
     }
     p {
+        font-size: 1.2rem;
         margin: 1rem;
     }
 }
 
-@media screen and (min-width: 850px) {
-    #homeBox {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-around;
-    }
-    #homePic {
-        width: 35%;
-        margin: 0rem .5rem;
-    }
-    #homeText {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        height: 50%;
-        margin: 0rem .5rem;
-    }
-    p {
-        height: 10%;
-    }
-}

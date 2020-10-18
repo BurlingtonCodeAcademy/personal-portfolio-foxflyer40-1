@@ -3,11 +3,12 @@
     padding: 0;
     width: 100vw;
     height: 100vh;
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    /* position: absolute; */
+   
     
 }
 
@@ -15,11 +16,13 @@
     margin: 0;
     width: 100%;
     height: 100%;
-    /* position: relative; */
+    position: absolute;
     top: 10%;
-    bottom: 10%
+    /* bottom: 10%; */
+    
 }
 
+/* Landscape orientation on cell device */
 @media screen and (min-width: 560px) and (max-width: 849px) {
     #container {
         align-items: flex-end;
@@ -28,12 +31,21 @@
         margin: 0;
         width: 80.3%;
         height: 100%;
+        top: 0;
         /* position: fixed; */
        
         
     }
 }
 
+/* Full Screen on laptop or tablet */
+@media  (min-width: 850px) {
+
+
+}
+
+
+/* iPad only */
 @media screen 
 and (width: 768px) 
 and (height: 1024px) 
@@ -43,8 +55,8 @@ and (height: 1024px)
         width: 100%;
         height: 80%;
         /* position: fixed; */
-        top: 10.5%;
-        bottom: 11%;
+        top: 10%;
+        bottom: 10%;
         left:    0
     }
 }

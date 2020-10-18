@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import homePicture from './0pix/homePicture.jpg'
+import homePicture from '../0pix/homePicture.jpg'
 
 function Home(props) {
     return (

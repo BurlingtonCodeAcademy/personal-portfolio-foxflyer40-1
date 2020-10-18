@@ -4,7 +4,7 @@ import './Footer.css'
 
 function Footer(props) {
     return (
-        <div id='footerContainer'>
+       
             <div id='footerBox'>
 
                 <div className='pageLink' >LinkedIn</div>
@@ -14,7 +14,7 @@ function Footer(props) {
                 }
                 </div>
             </div>
-        </div>
+      
     )
 }
 

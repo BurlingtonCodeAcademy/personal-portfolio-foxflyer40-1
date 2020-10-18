@@ -7,7 +7,7 @@ function Header(props) {
 
 
     return (
-        <div id='headerContainer'>
+       
             <div id='headerBox'>
                 <Link className='pageLink' to='/'>Home</Link>
                 <Link className='pageLink' to='/about'  >About</Link>
@@ -15,7 +15,7 @@ function Header(props) {
                 <Link className='pageLink' to='/interests'  >Interests</Link>
                 <Link className='pageLink' to='/career'  >Career</Link>
             </div>
-        </div>
+       
     )
 }
 
