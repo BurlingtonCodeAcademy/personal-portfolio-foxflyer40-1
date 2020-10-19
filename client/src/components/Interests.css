@@ -37,12 +37,44 @@ img {
 /* Full Screen on laptop or tablet */
 @media  (min-width: 850px) {
 
+    #interestsBox  {
+        width: 100%;
+        height: 88%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        background-color: cornsilk;
+        padding: 0rem 0rem 5rem 0rem;
+    }
+
+    label {
+        width: 25em;
+    }
+
 }
 
 /* iPad only */
-@media screen 
-and (width: 768px) 
-and (height: 1024px) 
-{
+@media screen and (width: 768px) and (height: 1024px) {
+    #interestsBox  {
+        width: 100%;
+        height: 91%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        background-color: cornsilk;
+        padding: 0rem 0rem 5rem 0rem;
+    }
+
+    #divider {
+        display: none;
+    }
+
+    label {
+        width: 20em;
+    }
 
 }

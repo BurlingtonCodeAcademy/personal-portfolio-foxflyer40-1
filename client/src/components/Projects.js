@@ -25,7 +25,7 @@ function Projects(props) {
                 </a>
                 <h6>(Demo version)</h6>
             </label>
-            <h1 id='divider'></h1>
+            <div id='divider'></div>
             <label>
                 <div className='projectLabel'>
                     Tic Tac Toe
@@ -37,7 +37,7 @@ function Projects(props) {
                     <img src={(TicTacToe)} alt='Tic-Tac-Toe board'></img>
                 </a>
             </label>
-            <h1 id='divider'></h1>
+            <div id='divider'></div>
             <div  id='gitBox'>
             <label>
                   <div className='projectLabel'>
@@ -52,7 +52,7 @@ function Projects(props) {
                      </a>
                   </div>
                </label>
-               <h1 id='divider'></h1>
+               <div id='divider'></div>
 
                <label>
                   <div className='projectLabel'>

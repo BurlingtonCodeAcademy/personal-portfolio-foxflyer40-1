@@ -87,7 +87,7 @@ p {
     }
 
     p {
-        font-size: 2rem;
+        font-size: 2rem !important;
         margin: 1rem;
     }
   

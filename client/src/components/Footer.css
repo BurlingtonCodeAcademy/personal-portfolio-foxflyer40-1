@@ -9,9 +9,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1rem;
 }
 
-
+#footerBox .pageLink {
+     padding: 0rem 1rem;
+     width: fit-content;
+}
 
 @media screen and (min-width: 560px) and (max-width: 849px) {
  
@@ -35,8 +39,10 @@
 @media (min-width: 850px) {
     #footerBox {
         justify-content: flex-start;
+        font-size: 1.5rem;
     }
     .pageLink {
+        width: fit-content;
         padding: 0 1em;
     }
 
@@ -53,7 +59,7 @@
         bottom: 0em;
 
        
-      
+        font-size: 1.5rem;
         background-color: cornsilk;
         display: flex;
         flex-direction: row;

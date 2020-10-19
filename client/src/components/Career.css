@@ -1,4 +1,14 @@
-
+#careerBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: cornsilk;
+    padding: 0rem 0rem 5rem 0rem;
+}
 
 
 
@@ -6,6 +16,11 @@
 
 /* Landscape orientation on cell device */
 @media screen and (min-width: 560px) and (max-width: 849px) {
+
+label {
+   width: 13em;
+   padding-top: 1em;
+}
 
 }
 
@@ -20,5 +35,8 @@
 and (width: 768px) 
 and (height: 1024px) 
 {
-
+    label {
+        width: 25em;
+        padding-top: 3em;
+     }
 }

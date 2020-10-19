@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1rem;
     z-index: 10;
 }
 
@@ -26,12 +27,14 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        font-size: 1rem;
     }    
 }
 
 @media  (min-width: 850px) {
     #headerBox {
         justify-content: flex-end;
+        font-size: 1.5rem;
     }
     .pageLink {
         padding: 0 1em;
@@ -47,7 +50,7 @@
         height: 10%;
         position: fixed;
         top: 0em;
-        
+        font-size: 1.5rem;
         background-color: cornsilk;
         display: flex;
         flex-direction: row;

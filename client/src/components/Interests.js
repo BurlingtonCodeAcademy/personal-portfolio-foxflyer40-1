@@ -20,7 +20,7 @@ function Interests(props) {
                     <img src={(RCAV8R)} alt='Link to RC Aviation'></img>
                 </a>
             </label>
-            <h1 id='divider'></h1>
+            <div id='divider'></div>
             <label >
                 <div className='hobbyLabel'>
                     Photography

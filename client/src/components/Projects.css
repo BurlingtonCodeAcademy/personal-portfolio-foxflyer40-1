@@ -1,4 +1,4 @@
-#projectsBox, #gitBox  {
+#projectsBox, #gitBox {
     width: 100%;
     /* height: 100%; */
     display: flex;
@@ -29,7 +29,7 @@ img {
 
 /* Landscape orientation on cell device */
 
-@media screen and (min-width: 560px) and (max-width: 849px) {}
+/* @media screen and (min-width: 560px) and (max-width: 849px) {} */
 
 /* Full Screen on laptop or tablet */
 
@@ -42,27 +42,24 @@ img {
         justify-content: space-evenly;
         padding: 6rem 0rem 0rem 0rem;
     }
-
     label {
         width: 20rem;
     }
-     
+
     #gitBox {
         padding: 0;
         width: fit-content;
         display: flex;
         flex-direction: column;
     }
-
     #divider {
-        width: 0;
-    }
+        display: none;
+          }
 }
 
 /* iPad only */
 
 @media screen and (width: 768px) and (height: 1024px) {
-
     #projectsBox {
         height: 100%;
         display: flex;
@@ -73,16 +70,40 @@ img {
     }
 
     label {
-        width: 13rem;
+        width: 13rem !important;
     }
-     
+
     #gitBox {
         padding: 0;
         width: fit-content;
         display: flex;
         flex-direction: column;
     }
+    #divider {
+        width: 0;
+    }
+}
 
+@media screen and (width: 1024px) and (height: 768px) {
+    #projectsBox {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 6rem 0rem 0rem 0rem;
+    }
+
+    label {
+        width: 10rem !important;
+    }
+
+    #gitBox {
+        padding: 0;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
     #divider {
         width: 0;
     }
