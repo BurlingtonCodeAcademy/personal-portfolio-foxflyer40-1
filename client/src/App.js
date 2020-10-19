@@ -38,7 +38,7 @@ function App() {
                         <Route path='/career' component={Career} />
                     </Switch>
                     {modal && <Modal closeModal={handleModalClose} />}
-                   <Modal />
+                  
                 </div>
 
                 <Footer openModal={handleModalOpen} closeModal={handleModalClose} />

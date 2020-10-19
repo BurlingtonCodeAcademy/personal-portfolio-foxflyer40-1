@@ -2,20 +2,20 @@ import React from 'react'
 import './Modal.css'
 
 
-const Modal = ({ props }) => {
+const Modal = ({ closeModal }) => {
 
     return (
         <div id='modalWindow'>
             <div id='footForm'>
-                <input className='input' type='text' id='name' placeholder=' Name' />
-                <input className='input' type='text' id='email' placeholder=" Email" />
-                <textarea className='input' id='message' placeholder=" Message"></textarea>
-                <button id="sendEmail" type='submit'> Send
+                <input class='input' type='text' id='name' placeholder=' Name' />
+                <input class='input' type='text' id='email' placeholder=" Email" />
+                <textarea class='input' id='message' placeholder=" Message"></textarea>
+                <button id="sendEmail" type='submit'><img class='icons' src='./1images/footerlink-email.png' /> Send
                     Message</button>
             </div>
             <button
                 id='closeModal'
-                onClick={ props.closeModal }
+                onClick={() => { closeModal() }}
             >Close
             </button>
         </div>
