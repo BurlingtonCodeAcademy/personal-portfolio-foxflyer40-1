@@ -11,7 +11,7 @@ function Home(props) {
                 <p>Full-Stack Web Developer</p>
             </div>
             <div id='homePic'>
-                <img src={(homePicture)} />
+                <img src={(homePicture)  } />
             </div>
         </div>
 

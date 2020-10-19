@@ -2,7 +2,7 @@ import React from 'react'
 import './Modal.css'
 
 
-const Modal = ({ closeModal }) => {
+const Modal = ({ props }) => {
 
     return (
         <div id='modalWindow'>
@@ -10,12 +10,12 @@ const Modal = ({ closeModal }) => {
                 <input className='input' type='text' id='name' placeholder=' Name' />
                 <input className='input' type='text' id='email' placeholder=" Email" />
                 <textarea className='input' id='message' placeholder=" Message"></textarea>
-                <button id="sendEmail" type='submit'><img className='icons' src='./1images/footerlink-email.png' /> Send
+                <button id="sendEmail" type='submit'> Send
                     Message</button>
             </div>
             <button
                 id='closeModal'
-                onClick={() => { closeModal() }}
+                onClick={ props.closeModal }
             >Close
             </button>
         </div>

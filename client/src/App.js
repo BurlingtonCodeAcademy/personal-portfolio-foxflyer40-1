@@ -1,14 +1,14 @@
 import React, { useState} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header'
-import Home from './components/Home'
+import Header from './components/Header.js'
+import Home from './components/Home.js'
 import About from './components/About.js'
 import Projects from './components/Projects.js'
 import Interests from './components/Interests.js'
 import Career from './components/Career.js'
-import Footer from './components/Footer'
-import Modal from './components/Modal'
+import Footer from './components/Footer.js'
+import Modal from './components/Modal.js'
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
     const [modal, setModal] = useState(false)
 
     const handleModalOpen = () => {
+      
         setModal(true)
         console.log(modal)
     }
@@ -37,6 +38,7 @@ function App() {
                         <Route path='/career' component={Career} />
                     </Switch>
                     {modal && <Modal closeModal={handleModalClose} />}
+                   <Modal />
                 </div>
 
                 <Footer openModal={handleModalOpen} closeModal={handleModalClose} />
