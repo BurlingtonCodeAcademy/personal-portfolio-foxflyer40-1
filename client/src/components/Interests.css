@@ -1,4 +1,4 @@
-#interestsBox  {
+#interestsBox {
     width: 100%;
     height: 81%;
     display: flex;
@@ -9,35 +9,26 @@
     background-color: cornsilk;
     padding: 0rem 0rem 5rem 0rem;
 }
-
 .hobbyLabel {
     font-weight: 700;
 }
-
 h6 {
     margin: 0;
 }
-
 img {
     margin: .5rem 0rem;
 }
-
 #divider {
     width: 80%;
     border-bottom: .2rem solid chocolate;
 }
 
-
 /* Landscape orientation on cell device */
-@media screen and (min-width: 560px) and (max-width: 849px) {
-
-}
-
+@media screen and (min-width: 560px) and (max-width: 849px) {}
 
 /* Full Screen on laptop or tablet */
-@media  (min-width: 850px) {
-
-    #interestsBox  {
+@media (min-width: 850px) {
+    #interestsBox {
         width: 100%;
         height: 88%;
         display: flex;
@@ -48,16 +39,14 @@ img {
         background-color: cornsilk;
         padding: 0rem 0rem 5rem 0rem;
     }
-
     label {
         width: 25em;
     }
-
 }
 
 /* iPad only */
 @media screen and (width: 768px) and (height: 1024px) {
-    #interestsBox  {
+    #interestsBox {
         width: 100%;
         height: 91%;
         display: flex;
@@ -68,13 +57,10 @@ img {
         background-color: cornsilk;
         padding: 0rem 0rem 5rem 0rem;
     }
-
     #divider {
         display: none;
     }
-
     label {
         width: 20em;
     }
-
 }

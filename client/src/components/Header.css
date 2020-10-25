@@ -1,4 +1,3 @@
-
 #headerBox {
     width: 100%;
     height: 10%;
@@ -12,9 +11,8 @@
     z-index: 10;
 }
 
+/* Landscape orientation on cell device */
 @media screen and (min-width: 560px) and (max-width: 849px) {
- 
-
     #headerBox {
         margin: 0;
         width: 20%;
@@ -28,10 +26,11 @@
         justify-content: space-around;
         align-items: center;
         font-size: 1rem;
-    }    
+    }
 }
 
-@media  (min-width: 850px) {
+/* Full Screen on laptop or tablet */
+@media (min-width: 850px) {
     #headerBox {
         justify-content: flex-end;
         font-size: 1.5rem;
@@ -41,9 +40,8 @@
     }
 }
 
+/* iPad only */
 @media screen and (width: 768px) and (height: 1024px) {
-    
-    
     #headerBox {
         margin: 0;
         width: 100%;
@@ -57,7 +55,6 @@
         justify-content: flex-end;
         align-items: center;
     }
-    
     .pageLink {
         padding: 0 1em;
     }

@@ -10,33 +10,21 @@
     padding: 0rem 0rem 5rem 0rem;
 }
 
-
-
-
-
 /* Landscape orientation on cell device */
 @media screen and (min-width: 560px) and (max-width: 849px) {
-
-label {
-   width: 13em;
-   padding-top: 1em;
+    label {
+        width: 13em;
+        padding-top: 1em;
+    }
 }
-
-}
-
 
 /* Full Screen on laptop or tablet */
-@media  (min-width: 850px) {
-
-}
+@media (min-width: 850px) {}
 
 /* iPad only */
-@media screen 
-and (width: 768px) 
-and (height: 1024px) 
-{
+@media screen and (width: 768px) and (height: 1024px) {
     label {
         width: 25em;
         padding-top: 3em;
-     }
+    }
 }

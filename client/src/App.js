@@ -1,4 +1,5 @@
-import React, { useState} from 'react';
+// import REACT and all components
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header.js'
@@ -12,11 +13,8 @@ import Modal from './components/Modal.js'
 
 
 function App() {
-
     const [modal, setModal] = useState(false)
-
     const handleModalOpen = () => {
-      
         setModal(true)
         console.log(modal)
     }
@@ -24,13 +22,12 @@ function App() {
         setModal(false)
         console.log(modal)
     }
-
     return (
         <Router>
             <div id="container">
                 <Header />
                 <div id='mainContainer'>
-                    <Switch>
+                    <Switch>  {/* initialize react router to switch between components */}
                         <Route exact path='/' component={Home} />
                         <Route path='/about' component={About} />
                         <Route path='/projects' component={Projects} />
@@ -38,9 +35,7 @@ function App() {
                         <Route path='/career' component={Career} />
                     </Switch>
                     {modal && <Modal closeModal={handleModalClose} />}
-                  
                 </div>
-
                 <Footer openModal={handleModalOpen} closeModal={handleModalClose} />
             </div>
         </Router>

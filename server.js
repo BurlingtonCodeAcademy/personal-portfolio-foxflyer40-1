@@ -14,5 +14,5 @@ response.sendFile(path.resolve('./client/build/index.html'))
 })  // this is where the response will be sent
 
 
-// listener should be last in the file
-app.listen(port, () => { console.log(`Listening on port: ${port}`)})  // listen on the port defined above, then print that port to the console  --
+// listen on the port defined above, then print that port to the console 
+app.listen(port, () => { console.log(`Listening on port: ${port}`)})  

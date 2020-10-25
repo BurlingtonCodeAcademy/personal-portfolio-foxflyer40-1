@@ -3,14 +3,11 @@
     padding: 0;
     width: 100vw;
     height: 100vh;
-    /* position: absolute; */
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-   
-    
-}
+   }
 
 #mainContainer {
     margin: 0;
@@ -18,9 +15,7 @@
     height: 100%;
     position: absolute;
     top: 10%;
-    /* bottom: 10%; */
-    
-}
+   }
 
 /* Landscape orientation on cell device */
 @media screen and (min-width: 560px) and (max-width: 849px) {
@@ -39,11 +34,8 @@
 }
 
 /* Full Screen on laptop or tablet */
-@media  (min-width: 850px) {
-
-
-}
-
+/* @media  (min-width: 850px) {} */
+/* not needed */
 
 /* iPad only */
 @media screen 

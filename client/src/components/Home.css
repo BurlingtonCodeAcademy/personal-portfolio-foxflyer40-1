@@ -8,29 +8,23 @@
     background-color: cornsilk;
     position: fixed;
 }
-
 #homeText {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #homePic {
     width: 60%;
 }
-
 img {
     width: 100%;
     border-radius: 2rem;
     margin: 2rem 0rem;
 }
-
 p {
     margin: 1rem 0rem 0rem 0rem;
     font-size: 1.2rem;
 }
-
-
 
 /* Landscape orientation on cell device */
 @media screen and (min-width: 560px) and (max-width: 849px) {
@@ -59,7 +53,6 @@ p {
         margin: 1rem 0rem 0rem 0rem;
         font-size: 1.2rem;
     }
-
 }
 
 /* Full Screen on laptop or tablet */
@@ -85,12 +78,10 @@ p {
         height: 50%;
         margin: 9rem .5rem;
     }
-
     p {
         font-size: 2rem !important;
         margin: 1rem;
     }
-  
 }
 
 /* iPad only */
@@ -123,4 +114,3 @@ p {
         margin: 1rem;
     }
 }
-

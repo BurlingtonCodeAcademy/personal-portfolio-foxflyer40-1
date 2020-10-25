@@ -1,9 +1,8 @@
+// import REACT, and css file
 import React from 'react'
 import './Modal.css'
 
-
 const Modal = ({ closeModal }) => {
-
     return (
         <div id='modalWindow'>
             <div id='footForm'>
@@ -20,6 +19,5 @@ const Modal = ({ closeModal }) => {
             </button>
         </div>
     )
-
 }
 export default Modal

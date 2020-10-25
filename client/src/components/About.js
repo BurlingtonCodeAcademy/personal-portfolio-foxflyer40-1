@@ -1,15 +1,16 @@
+// import REACT and css file
 import React from 'react'
 import './About.css'
 
-
 function About(props) {
     return (
-        // <div id='aboutContainer' >
         <div id='aboutBox'>
             <div id='aboutContent'>
+                {/* header and text */}
                 <h1>
                     It's all about Michael...<br />
                 </h1>
+                {/* body text for about page */}
                 <p>
                     I am a native Vermonter with a 37-year-old degree in programming. (Champlain College class of 1983 - A.S. Data Processing)  Funny thing is... I never used it.  Until now.
                </p>
@@ -36,7 +37,6 @@ function About(props) {
                </p>
             </div>
         </div>
-        // </div>
     )
 }
 
