@@ -1,0 +1,69 @@
+/* Footer styling */
+
+#footerBox {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0em;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#footerBox .pageLink {
+    padding: 0rem 1rem;
+    width: fit-content;
+}
+
+/* Landscape orientation on cell device */
+
+@media screen and (min-width: 560px) and (max-width: 849px) {
+    #footerBox {
+        margin: 0;
+        width: 20vw;
+        height: 50vh;
+        position: fixed;
+        left: .1em;
+        border-top: none;
+        background-color: cornsilk;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* Full Screen on laptop or tablet */
+
+@media (min-width: 850px) {
+    #footerBox {
+        justify-content: flex-start;
+        font-size: 1.5rem;
+    }
+    .pageLink {
+        width: fit-content;
+        padding: 0 1em;
+    }
+}
+
+/* iPad only */
+@media screen and (width: 768px) and (height: 1024px) {
+    #footerBox {
+        margin: 0;
+        width: 100%;
+        height: 10vh;
+        position: fixed;
+        bottom: 0em;
+        font-size: 1.5rem;
+        background-color: cornsilk;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .pageLink {
+        padding: 0 1em;
+    }
+}

@@ -1,0 +1,109 @@
+#projectsBox, #gitBox {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: cornsilk;
+    padding: 0rem 0rem 5rem 0rem;
+}
+
+.projectLabel {
+    font-weight: 700;
+}
+
+h6 {
+    margin: 0;
+}
+
+img {
+    margin: .5rem 0rem;
+}
+
+#divider {
+    width: 80%;
+    border-bottom: .2rem solid chocolate;
+}
+
+/* Landscape orientation on cell device */
+
+/* @media screen and (min-width: 560px) and (max-width: 849px) {} */
+
+/* not needed */
+
+/* Full Screen on laptop or tablet */
+
+@media (min-width: 850px) {
+    #projectsBox {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 6rem 0rem 0rem 0rem;
+    }
+    label {
+        width: 20rem;
+    }
+    #gitBox {
+        padding: 0;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    #divider {
+        display: none;
+    }
+}
+
+/* iPad only portrait view */
+
+@media screen and (width: 768px) and (height: 1024px) {
+    #projectsBox {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 6rem 0rem 0rem 0rem;
+    }
+    label {
+        width: 13rem !important;
+    }
+    #gitBox {
+        padding: 0;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    #divider {
+        width: 0;
+    }
+}
+
+/* iPad only landscape view */
+
+@media screen and (width: 1024px) and (height: 768px) {
+    #projectsBox {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 6rem 0rem 0rem 0rem;
+    }
+    label {
+        width: 10rem !important;
+    }
+    #gitBox {
+        padding: 0;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    #divider {
+        width: 0;
+    }
+}
