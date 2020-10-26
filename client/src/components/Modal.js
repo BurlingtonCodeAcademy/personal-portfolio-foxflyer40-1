@@ -11,15 +11,17 @@ const Modal = ({ closeModal }) => {
     return (
         <div id='modalWindow'>
             <form id='footForm' onSubmit={submitForm}>
-                <input class='input' type='text' id='name' placeholder=' Name' />
+                <input className='input' type='text' id='name' placeholder=' Name' />
                 <br />
-                <input class='input' type='text' id='email' placeholder=" Email" />
+                <input className='input' type='text' id='email' placeholder=" Email" />
                 <br />
-                <textarea class='input' type='input' id='message' placeholder=" Message"></textarea>
+                <textarea className='input' type='input' id='message' placeholder=" Message"></textarea>
                 <br />
+                {/* submit button */}
                 <button id="sendEmail" type='submit' > Send Message</button>
                 <br />
                 <br />
+                {/* close the modal */}
                 <button type='button'
                     id='closeModal'
                     onClick={() => { closeModal() }}
