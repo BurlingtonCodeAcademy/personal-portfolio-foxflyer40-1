@@ -6,7 +6,7 @@ import './Header.css'
 
 function Header(props) {
     return (
-        <div id='headerBox'>  {/* link to other components as shown */}
+        <div id='headerBox'>  {/* react router links to other components as shown */}
             <Link className='pageLink' to='/'>Home</Link>
             <Link className='pageLink' to='/about'  >About</Link>
             <Link className='pageLink' to='/projects'  >Projects</Link>
