@@ -9,10 +9,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1rem;
 }
 
-#footerBox .pageLink {
+a {
+    font-size: 1rem;
+    text-decoration: none !important;
     padding: 0rem 1rem;
     width: fit-content;
 }
@@ -40,15 +41,17 @@
 @media (min-width: 850px) {
     #footerBox {
         justify-content: flex-start;
-        font-size: 1.5rem;
     }
-    .pageLink {
+    a {
+        font-size: 2rem !important;
+        text-decoration: none !important;
         width: fit-content;
         padding: 0 1em;
     }
 }
 
 /* iPad only */
+
 @media screen and (width: 768px) and (height: 1024px) {
     #footerBox {
         margin: 0;
@@ -63,7 +66,8 @@
         justify-content: flex-start;
         align-items: center;
     }
-    .pageLink {
+    a {
+        text-decoration: none !important;
         padding: 0 1em;
     }
 }
